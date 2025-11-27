@@ -1,5 +1,5 @@
 # 💫 About Me:
-💻 Learning programming through projects and hands-on practice<br>🤖 Working on improving my project-building and debugging skills<br> 🚀 All my projects are hosted on gitHub<br> 📧 Reach out to me at akshayabhi0005@gmail.com<br>
+💻 Learning programming through projects and hands-on practice<br>🤖 Working on improving my project-building and debugging skills<br> 🚀 All my projects are hosted on github<br> 📧 Reach out to me at akshayabhi0005@gmail.com<br>
 
 
 ## 🌐 Socials:
