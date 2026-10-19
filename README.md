@@ -43,6 +43,7 @@
 </table>
 
 <br />
+
 ## 🛠️ My Tech Stack
 
 <div align="center">
