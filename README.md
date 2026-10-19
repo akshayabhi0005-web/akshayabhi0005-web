@@ -104,13 +104,12 @@
 
 ---
 ---
-
 ## 📊 Contribution Activity
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=akshayabhi0005-web&bg_color=0d1117&color=5EF0B5&line=0B6B50&point=E9D8A6&area=true&hide_border=true"
-     alt="GitHub Contribution Activity Graph"
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=akshayabhi0005-web&theme=github-compact"
+     alt="GitHub Contribution Activity"
      width="100%"/>
 
 </div>
