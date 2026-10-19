@@ -9,17 +9,40 @@
 
 ---
 
-## 👋 About Me
+<br />
 
-Hi! I'm **Akshay N**, a Computer Science Engineering student who enjoys exploring technology, solving problems, and turning ideas into useful software. I learn best by building, experimenting, and improving one step at a time.
+<table>
+  <tr>
+    <td width="34%" align="center" valign="top">
+      <br />
+      <img src="assets/developer-avatar.png" alt="Akshay N Developer Emblem" width="120" />
+      <br /><br />
+      <h3>AKSHAY N</h3>
+      <p><b>Software Developer</b></p>
+      <p><i>"Building. Experimenting. Improving."</i></p>
+      <hr />
+      <p align="left">
+        ⚡ &nbsp;<b>Full-Stack Development</b><br />
+        🧠 &nbsp;<b>Algorithms &amp; Problem Solving</b><br />
+        🛠️ &nbsp;<b>Backend Engineering</b>
+      </p>
+    </td>
+    <td width="66%" valign="top">
+      <h3> About Me</h3>
+      <p>
+        I am a software developer with a focus on engineering clean, scalable full-stack applications and resilient backend systems. My work centers on applying core computer science fundamentals—data structures, algorithmic efficiency, and modular system design—to practical engineering challenges.
+      </p>
+      <p>
+        I enjoy working across the full application lifecycle: modeling relational and document-oriented databases, building performant RESTful APIs, and developing responsive, intuitive user interfaces with modern web standards.
+      </p>
+      <p>
+        My focus is on writing maintainable, well-structured code, understanding architectural trade-offs, and transforming complex requirements into dependable, production-ready software.
+      </p>
+    </td>
+  </tr>
+</table>
 
-- 💻 Interested in software development and practical problem-solving.
-- 🌱 Always learning new concepts, tools, and engineering practices.
-- 🧩 Enjoy breaking complex problems into smaller, understandable pieces.
-- 🤝 Appreciate collaboration, knowledge-sharing, and constructive feedback.
-- 🎯 Aim to build software that is useful, clear, and thoughtfully engineered.
-
----
+<br />
 
 ## 🛠️ My Tech Stack
 
