@@ -103,18 +103,7 @@
 </div>
 
 ---
----
-## 📊 Contribution Activity
 
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=akshayabhi0005-web&theme=github-compact"
-     alt="GitHub Contribution Activity"
-     width="100%"/>
-
-</div>
-
----
 
 ## 📈 GitHub Analytics
 
