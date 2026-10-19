@@ -41,7 +41,7 @@
 
 ---
 
-## 02 / Engineering Mindset
+ Engineering Mindset
 
 <br />
 
@@ -72,7 +72,7 @@
 
 ---
 
-## 03 / Technical Arsenal
+Technical Arsenal
 
 <br />
 
@@ -154,7 +154,7 @@
 
 ---
 
-## 05 / Current Focus
+ Current Focus
 
 ```bash
 $ developer --status
@@ -170,7 +170,7 @@ CURRENT PRIORITIES  : Clean Code · Predictable Performance · Resilient API Con
 
 ---
 
-## 06 / Let's Connect
+ Let's Connect
 
 Whether you want to discuss software engineering, system architecture, or explore technical ideas, feel free to reach out.
 
