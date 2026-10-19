@@ -4,7 +4,7 @@
   <a href="https://github.com/akshayabhi0005-web">
     <img src="https://img.shields.io/badge/GitHub-akshayabhi0005--web-0B6B50?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile"/>
   </a>
-  <img src="https://komarev.com/ghpvc/?username=akshayabhi0005-web&style=for-the-badge&color=0B6B50&label=PROFILE+VIEWS" alt="Profile views"/>
+ <img src="https://komarev.com/ghpvc/?username=akshayabhi0005-web&style=for-the-badge&color=0B6B50&label=PROFILE+VIEWS" alt="Profile Views"/>
 </div>
 
 ---
