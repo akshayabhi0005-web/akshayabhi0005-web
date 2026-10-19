@@ -1,174 +1,181 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320">
   <defs>
     <!-- Background Gradients -->
-    <radialGradient id="bg-glow" cx="65%" cy="40%" r="65%" fx="60%" fy="35%">
-      <stop offset="0%" stop-color="#24221D" stop-opacity="0.9"/>
-      <stop offset="45%" stop-color="#141416" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#0A0A0C" stop-opacity="1"/>
+    <radialGradient id="circuit-bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1B222E" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#151A22" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#111318" stop-opacity="1"/>
     </radialGradient>
 
-    <!-- Gold Gradients -->
-    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F2DEB0"/>
-      <stop offset="50%" stop-color="#D6B878"/>
-      <stop offset="100%" stop-color="#9E8045"/>
+    <!-- Center Spotlight Glow -->
+    <radialGradient id="center-glow" cx="50%" cy="48%" r="45%">
+      <stop offset="0%" stop-color="#54E1C1" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#54E1C1" stop-opacity="0.0"/>
+    </radialGradient>
+
+    <!-- Mint Teal Gradients -->
+    <linearGradient id="mint-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7BFFDF"/>
+      <stop offset="50%" stop-color="#54E1C1"/>
+      <stop offset="100%" stop-color="#289E84"/>
     </linearGradient>
 
-    <linearGradient id="gold-subtle" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#D6B878" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#D6B878" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="#D6B878" stop-opacity="0"/>
+    <linearGradient id="mint-fade-center" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#54E1C1" stop-opacity="0.0"/>
+      <stop offset="25%" stop-color="#54E1C1" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#7BFFDF" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#54E1C1" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#54E1C1" stop-opacity="0.0"/>
     </linearGradient>
 
-    <linearGradient id="line-glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D6B878" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#D6B878" stop-opacity="0.05"/>
+    <!-- Warm Amber Gradients -->
+    <linearGradient id="amber-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FED7AA"/>
+      <stop offset="100%" stop-color="#F0B67F"/>
     </linearGradient>
 
-    <linearGradient id="ivory-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- High-End Typography Gradient -->
+    <linearGradient id="text-primary-grad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#E2DDD5"/>
+      <stop offset="85%" stop-color="#F4F5F7"/>
+      <stop offset="100%" stop-color="#D2D6DC"/>
     </linearGradient>
 
-    <!-- Grid Pattern -->
-    <pattern id="arch-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D6B878" stroke-width="0.5" stroke-opacity="0.07"/>
-      <circle cx="0" cy="0" r="0.75" fill="#D6B878" fill-opacity="0.25"/>
+    <!-- Circuit Dot Matrix Pattern -->
+    <pattern id="pcb-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#303642" fill-opacity="0.6"/>
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#303642" stroke-width="0.35" stroke-opacity="0.22"/>
     </pattern>
 
-    <!-- Glow Filter -->
-    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <!-- Glow Filters -->
+    <filter id="soft-teal-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="amber-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
   </defs>
 
-  <!-- Base Canvas -->
-  <rect width="1200" height="400" fill="url(#bg-glow)"/>
-  <rect width="1200" height="400" fill="url(#arch-grid)"/>
+  <!-- Base Obsidian Canvas -->
+  <rect width="1280" height="320" fill="url(#circuit-bg)"/>
+  <rect width="1280" height="320" fill="url(#pcb-grid)"/>
+  <rect width="1280" height="320" fill="url(#center-glow)"/>
 
-  <!-- Subtle Isometric Structural Guides (Architecture Aesthetic) -->
-  <g opacity="0.4">
-    <line x1="0" y1="80" x2="1200" y2="80" stroke="#D6B878" stroke-width="0.5" stroke-opacity="0.12" stroke-dasharray="4,8"/>
-    <line x1="0" y1="320" x2="1200" y2="320" stroke="#D6B878" stroke-width="0.5" stroke-opacity="0.12" stroke-dasharray="4,8"/>
-    <line x1="120" y1="0" x2="120" y2="400" stroke="#D6B878" stroke-width="0.5" stroke-opacity="0.12" stroke-dasharray="4,8"/>
-    <line x1="1080" y1="0" x2="1080" y2="400" stroke="#D6B878" stroke-width="0.5" stroke-opacity="0.12" stroke-dasharray="4,8"/>
+  <!-- Subtle Architectural Guidelines -->
+  <line x1="0" y1="44" x2="1280" y2="44" stroke="#303642" stroke-width="0.8" stroke-dasharray="2,6" opacity="0.6"/>
+  <line x1="0" y1="276" x2="1280" y2="276" stroke="#303642" stroke-width="0.8" stroke-dasharray="2,6" opacity="0.6"/>
+  <line x1="72" y1="0" x2="72" y2="320" stroke="#303642" stroke-width="0.8" stroke-dasharray="2,6" opacity="0.5"/>
+  <line x1="1208" y1="0" x2="1208" y2="320" stroke="#303642" stroke-width="0.8" stroke-dasharray="2,6" opacity="0.5"/>
+
+  <!-- =================================================================== -->
+  <!-- LEFT CIRCUIT TOPOLOGY                                               -->
+  <!-- =================================================================== -->
+  <g transform="translate(0, 0)" opacity="0.9">
+    <!-- Left Logic Node & Processor Element -->
+    <rect x="130" y="115" width="54" height="54" rx="8" fill="#191D24" stroke="#303642" stroke-width="1.2"/>
+    <circle cx="157" cy="142" r="14" fill="none" stroke="#54E1C1" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+    <circle cx="157" cy="142" r="3" fill="#54E1C1" filter="url(#soft-teal-glow)"/>
+
+    <!-- Left PCB Traces toward Center -->
+    <path d="M 60 70 L 140 70 L 180 110 L 250 110 L 290 150 L 370 150" fill="none" stroke="#54E1C1" stroke-width="1.3" stroke-opacity="0.6"/>
+    <circle cx="60" cy="70" r="3.5" fill="#191D24" stroke="#54E1C1" stroke-width="1.5"/>
+    <circle cx="60" cy="70" r="1.5" fill="#54E1C1"/>
+    <circle cx="250" cy="110" r="2.5" fill="#54E1C1"/>
+    <circle cx="370" cy="150" r="3" fill="#54E1C1" filter="url(#soft-teal-glow)"/>
+
+    <path d="M 90 220 L 170 220 L 210 180 L 320 180 L 350 150" fill="none" stroke="#F0B67F" stroke-width="1.2" stroke-opacity="0.65" stroke-dasharray="5,3"/>
+    <circle cx="90" cy="220" r="3.5" fill="#191D24" stroke="#F0B67F" stroke-width="1.5"/>
+    <circle cx="90" cy="220" r="1.5" fill="#F0B67F"/>
+    <circle cx="320" cy="180" r="2" fill="#F0B67F"/>
+
+    <!-- Left Bus Telemetry -->
+    <text x="70" y="58" font-family="'SF Mono', Consolas, monospace" font-size="8.5" fill="#A6ADBB" opacity="0.75" letter-spacing="1">BUS_L // IN_01</text>
+    <text x="96" y="238" font-family="'SF Mono', Consolas, monospace" font-size="8.5" fill="#F0B67F" opacity="0.8" letter-spacing="1">V_REF // 3.3V</text>
   </g>
 
-  <!-- Network & Graph Visualization Graphic (Abstract Software Architecture & Data Structures) -->
-  <g transform="translate(720, 30)" opacity="0.85">
-    <!-- Graph Connections -->
-    <line x1="80" y1="70" x2="220" y2="40" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="220" y1="40" x2="330" y2="110" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="80" y1="70" x2="150" y2="180" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="220" y1="40" x2="150" y2="180" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="150" y1="180" x2="280" y2="210" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="330" y1="110" x2="280" y2="210" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="280" y1="210" x2="380" y2="280" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="150" y1="180" x2="90" y2="290" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="90" y1="290" x2="220" y2="320" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="280" y1="210" x2="220" y2="320" stroke="url(#line-glow)" stroke-width="1.2"/>
-    <line x1="330" y1="110" x2="420" y2="130" stroke="url(#line-glow)" stroke-width="0.8" stroke-dasharray="3,3"/>
-    <line x1="220" y1="40" x2="270" y2="-10" stroke="url(#line-glow)" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <!-- =================================================================== -->
+  <!-- RIGHT CIRCUIT TOPOLOGY                                              -->
+  <!-- =================================================================== -->
+  <g transform="translate(0, 0)" opacity="0.9">
+    <!-- Right Logic Hub -->
+    <rect x="1096" y="115" width="54" height="54" rx="8" fill="#191D24" stroke="#303642" stroke-width="1.2"/>
+    <circle cx="1123" cy="142" r="14" fill="none" stroke="#54E1C1" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+    <circle cx="1123" cy="142" r="3" fill="#54E1C1" filter="url(#soft-teal-glow)"/>
 
-    <!-- Concentric Target Rings on Key Hub Node -->
-    <circle cx="280" cy="210" r="32" fill="none" stroke="#D6B878" stroke-opacity="0.15" stroke-width="1"/>
-    <circle cx="280" cy="210" r="54" fill="none" stroke="#D6B878" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="5,5"/>
-    <circle cx="150" cy="180" r="24" fill="none" stroke="#D6B878" stroke-opacity="0.12" stroke-width="1"/>
+    <!-- Right PCB Traces toward Center -->
+    <path d="M 1220 70 L 1140 70 L 1100 110 L 1030 110 L 990 150 L 910 150" fill="none" stroke="#54E1C1" stroke-width="1.3" stroke-opacity="0.6"/>
+    <circle cx="1220" cy="70" r="3.5" fill="#191D24" stroke="#54E1C1" stroke-width="1.5"/>
+    <circle cx="1220" cy="70" r="1.5" fill="#54E1C1"/>
+    <circle cx="1030" cy="110" r="2.5" fill="#54E1C1"/>
+    <circle cx="910" cy="150" r="3" fill="#54E1C1" filter="url(#soft-teal-glow)"/>
 
-    <!-- Graph Nodes -->
-    <circle cx="80" cy="70" r="4" fill="#D6B878" filter="url(#soft-glow)"/>
-    <circle cx="220" cy="40" r="6" fill="#F2DEB0" filter="url(#soft-glow)"/>
-    <circle cx="330" cy="110" r="5" fill="#D6B878"/>
-    <circle cx="150" cy="180" r="7" fill="url(#gold-grad)" filter="url(#soft-glow)"/>
-    <circle cx="280" cy="210" r="9" fill="url(#gold-grad)" filter="url(#soft-glow)"/>
-    <circle cx="380" cy="280" r="4" fill="#D6B878"/>
-    <circle cx="90" cy="290" r="5" fill="#D6B878"/>
-    <circle cx="220" cy="320" r="6" fill="#D6B878"/>
-    <circle cx="420" cy="130" r="3" fill="#A8A29E" fill-opacity="0.6"/>
+    <path d="M 1190 220 L 1110 220 L 1070 180 L 960 180 L 930 150" fill="none" stroke="#F0B67F" stroke-width="1.2" stroke-opacity="0.65" stroke-dasharray="5,3"/>
+    <circle cx="1190" cy="220" r="3.5" fill="#191D24" stroke="#F0B67F" stroke-width="1.5"/>
+    <circle cx="1190" cy="220" r="1.5" fill="#F0B67F"/>
+    <circle cx="960" cy="180" r="2" fill="#F0B67F"/>
 
-    <!-- Node Coordinate Metadata -->
-    <text x="296" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" fill="#D6B878" font-weight="600" opacity="0.8" letter-spacing="1">NODE_HUB // 0x2E</text>
-    <text x="165" y="184" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8" fill="#A8A29E" opacity="0.6" letter-spacing="1">SYSTEM_CORE</text>
-    <text x="232" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="8" fill="#A8A29E" opacity="0.6" letter-spacing="1">NET_V3</text>
+    <!-- Right Bus Telemetry -->
+    <text x="1150" y="58" font-family="'SF Mono', Consolas, monospace" font-size="8.5" fill="#A6ADBB" opacity="0.75" letter-spacing="1">BUS_R // OUT_02</text>
+    <text x="1115" y="238" font-family="'SF Mono', Consolas, monospace" font-size="8.5" fill="#F0B67F" opacity="0.8" letter-spacing="1">CLK // 64MHz</text>
   </g>
 
-  <!-- Left Content Area: Personal Brand Typography & Structure -->
-  <g transform="translate(100, 0)">
-
-    <!-- Top System Identification Pill -->
-    <g transform="translate(0, 88)">
-      <rect x="0" y="0" width="310" height="28" rx="14" fill="#1C1B19" stroke="#D6B878" stroke-width="1" stroke-opacity="0.35"/>
-      <circle cx="16" cy="14" r="4" fill="#D6B878" filter="url(#soft-glow)"/>
-      <text x="30" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#D6B878" letter-spacing="2">SYSTEMS &amp; FULL-STACK ARCHITECTURE</text>
+  <!-- =================================================================== -->
+  <!-- CENTER DEVELOPER IDENTITY & TYPOGRAPHY                             -->
+  <!-- =================================================================== -->
+  <g transform="translate(640, 0)">
+    <!-- Top System Identifier Badge (Centered at x=0) -->
+    <g transform="translate(0, 52)">
+      <rect x="-114" y="0" width="228" height="26" rx="13" fill="#191D24" stroke="#303642" stroke-width="1"/>
+      <circle cx="-98" cy="13" r="3.5" fill="#54E1C1" filter="url(#soft-teal-glow)"/>
+      <circle cx="-98" cy="13" r="1.5" fill="#FFFFFF"/>
+      <text x="-82" y="17" font-family="'SF Mono', 'Fira Code', Consolas, monospace" font-size="9.5" font-weight="700" fill="#54E1C1" letter-spacing="1.8">OBSIDIAN CIRCUIT // 01</text>
+      <circle cx="98" cy="13" r="3" fill="#F0B67F" filter="url(#amber-glow)"/>
     </g>
 
-    <!-- Name Heading -->
-    <text x="0" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', Helvetica, sans-serif" font-size="64" font-weight="800" fill="url(#ivory-grad)" letter-spacing="4">AKSHAY N</text>
+    <!-- Main Title / Developer Name (CENTERED) -->
+    <text x="0" y="136" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="54" font-weight="900" fill="url(#text-primary-grad)" letter-spacing="5">AKSHAY N</text>
 
-    <!-- Champagne Gold Accent Divider -->
-    <rect x="2" y="210" width="460" height="2" fill="url(#gold-subtle)"/>
-    <circle cx="2" cy="211" r="2.5" fill="#D6B878"/>
+    <!-- Center Mint Circuit Divider Line -->
+    <g transform="translate(0, 154)">
+      <line x1="-220" y1="0" x2="220" y2="0" stroke="url(#mint-fade-center)" stroke-width="1.8"/>
+      <circle cx="0" cy="0" r="3" fill="#54E1C1" filter="url(#soft-teal-glow)"/>
+      <circle cx="-120" cy="0" r="2" fill="#54E1C1"/>
+      <circle cx="120" cy="0" r="2" fill="#54E1C1"/>
+    </g>
 
-    <!-- Creed / Mission Tagline -->
-    <text x="2" y="246" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="url(#gold-grad)" letter-spacing="6">BUILD  &#183;  EXPLORE  &#183;  INNOVATE</text>
+    <!-- Role: SOFTWARE DEVELOPER (CENTERED) with Amber Badge -->
+    <g transform="translate(0, 192)">
+      <text x="0" y="0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="url(#mint-glow)" letter-spacing="4">SOFTWARE DEVELOPER</text>
+    </g>
 
-    <!-- Engineering Philosophy Subtext -->
-    <text x="2" y="280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#A8A29E" letter-spacing="1.5">
-      Crafting resilient digital products, multithreaded systems &amp; data-driven applications
-    </text>
-
-    <!-- Specialized Domains Pills -->
-    <g transform="translate(0, 312)">
-      <!-- Item 1 -->
-      <g transform="translate(0, 0)">
-        <text x="0" y="11" font-family="SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="600" fill="#D6B878" letter-spacing="1">01</text>
-        <text x="20" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#E2DDD5" letter-spacing="1">DISTRIBUTED SYSTEMS</text>
-      </g>
-
-      <!-- Separator -->
-      <text x="175" y="11" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#D6B878" opacity="0.4">&#47;</text>
-
-      <!-- Item 2 -->
-      <g transform="translate(195, 0)">
-        <text x="0" y="11" font-family="SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="600" fill="#D6B878" letter-spacing="1">02</text>
-        <text x="20" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#E2DDD5" letter-spacing="1">JAVA CONCURRENCY</text>
-      </g>
-
-      <!-- Separator -->
-      <text x="355" y="11" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#D6B878" opacity="0.4">&#47;</text>
-
-      <!-- Item 3 -->
-      <g transform="translate(375, 0)">
-        <text x="0" y="11" font-family="SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="600" fill="#D6B878" letter-spacing="1">03</text>
-        <text x="20" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#E2DDD5" letter-spacing="1">REACT &amp; NEXT.JS</text>
-      </g>
-
-      <!-- Separator -->
-      <text x="515" y="11" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#D6B878" opacity="0.4">&#47;</text>
-
-      <!-- Item 4 -->
-      <g transform="translate(535, 0)">
-        <text x="0" y="11" font-family="SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace" font-size="10" font-weight="600" fill="#D6B878" letter-spacing="1">04</text>
-        <text x="20" y="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#E2DDD5" letter-spacing="1">GRAPH MINING &amp; 3D</text>
-      </g>
+    <!-- Tagline: "Engineering Ideas Into Working Software" (CENTERED) -->
+    <g transform="translate(0, 226)">
+      <text x="0" y="0" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="400" fill="#A6ADBB" letter-spacing="0.5">
+        <tspan fill="#F4F5F7" font-weight="600">“Engineering Ideas</tspan> Into Working Software”
+      </text>
     </g>
   </g>
 
-  <!-- Editorial Blueprint Markings & Framing Elements -->
-  <!-- Top-left bracket -->
-  <path d="M 24 40 L 24 24 L 40 24" fill="none" stroke="#D6B878" stroke-width="1.5" stroke-opacity="0.6"/>
-  <!-- Top-right bracket -->
-  <path d="M 1176 40 L 1176 24 L 1160 24" fill="none" stroke="#D6B878" stroke-width="1.5" stroke-opacity="0.6"/>
-  <!-- Bottom-left bracket -->
-  <path d="M 24 360 L 24 376 L 40 376" fill="none" stroke="#D6B878" stroke-width="1.5" stroke-opacity="0.6"/>
-  <!-- Bottom-right bracket -->
-  <path d="M 1176 360 L 1176 376 L 1160 376" fill="none" stroke="#D6B878" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- =================================================================== -->
+  <!-- TECHNICAL CORNER BRACKETS & SYSTEM METRICS FRAME                     -->
+  <!-- =================================================================== -->
+  <!-- Corner Tech Brackets in Mint -->
+  <path d="M 22 36 L 22 20 L 38 20" fill="none" stroke="#54E1C1" stroke-width="1.5" stroke-opacity="0.8"/>
+  <path d="M 1258 36 L 1258 20 L 1242 20" fill="none" stroke="#54E1C1" stroke-width="1.5" stroke-opacity="0.8"/>
+  <path d="M 22 284 L 22 300 L 38 300" fill="none" stroke="#54E1C1" stroke-width="1.5" stroke-opacity="0.8"/>
+  <path d="M 1258 284 L 1258 300 L 1242 300" fill="none" stroke="#54E1C1" stroke-width="1.5" stroke-opacity="0.8"/>
 
-  <!-- Coordinates & Build Meta -->
-  <text x="50" y="38" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9" fill="#A8A29E" opacity="0.6" letter-spacing="1.5">GEO // 12.9716°N · 77.5946°E</text>
-  <text x="1035" y="38" font-family="SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="9" fill="#D6B878" opacity="0.7" letter-spacing="1.5">STATUS // OPERATIONAL</text>
+  <!-- Top Technical Status Readouts -->
+  <text x="48" y="28" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#A6ADBB" opacity="0.8" letter-spacing="1.5">STACK // FULL_STACK · BACKEND · ARCHITECTURE</text>
+  <text x="1108" y="28" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#54E1C1" opacity="0.9" letter-spacing="1.5">SYS // NORMAL [200 OK]</text>
 
-  <!-- Outer Elegant Border -->
-  <rect x="1" y="1" width="1198" height="398" fill="none" stroke="#332D24" stroke-width="1" stroke-opacity="0.75" rx="8"/>
+  <!-- Bottom Technical Coordinate Readouts -->
+  <text x="48" y="298" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#303642" letter-spacing="1.5">LOC // 12.9716° N · 77.5946° E</text>
+  <text x="1114" y="298" font-family="'SF Mono', Consolas, monospace" font-size="9" fill="#F0B67F" opacity="0.8" letter-spacing="1.5">DEV_SPACE // v2.4.0</text>
+
+  <!-- Outer Protective Obsidian Border -->
+  <rect x="1" y="1" width="1278" height="318" rx="8" fill="none" stroke="#303642" stroke-width="1"/>
 </svg>
