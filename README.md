@@ -23,7 +23,7 @@
       </p>
     </td>
     <td width="66%" valign="top">
-      <h3>01 / About Me</h3>
+      <h3> About Me</h3>
       <p>
         I am a software developer with a focus on engineering clean, scalable full-stack applications and resilient backend systems. My work centers on applying core computer science fundamentals—data structures, algorithmic efficiency, and modular system design—to practical engineering challenges.
       </p>
@@ -128,7 +128,7 @@ Technical Arsenal
 
 ---
 
-## 04 / GitHub Activity
+##  GitHub Activity
 
 <div align="center">
 
