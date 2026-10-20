@@ -29,7 +29,6 @@
       <p align="left">
         ⚡ &nbsp;<b>Full-Stack Development</b><br />
         🧠 &nbsp;<b>Algorithms &amp; Problem Solving</b><br />
-        🛠️ &nbsp;<b>Backend Engineering</b>
       </p>
     </td>
     <td width="66%" valign="top">
