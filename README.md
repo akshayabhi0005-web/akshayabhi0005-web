@@ -1,10 +1,16 @@
 <div align="center">
   <img src="assets/github-banner.svg" alt="Akshay N — Developer, Builder, Lifelong Learner" width="100%"/>
   <br/><br/>
+
+  <!-- GitHub Badge -->
   <a href="https://github.com/akshayabhi0005-web">
-    <img src="https://img.shields.io/badge/GitHub-akshayabhi0005--web-0B6B50?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile"/>
-<img src="https://komarev.com/ghpvc/?username=akshayabhi0005-web&style=for-the-badge&color=0B6B50&label=PROFILE+VIEWS" alt="Profile Views"/>
-   </a>
+    <img src="https://img.shields.io/badge/GitHub-akshayabhi0005--web-0B6B50?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"/>
+  </a>
+
+  <!-- LinkedIn Badge -->
+  <a href="YOUR_LINKEDIN_PROFILE_URL">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile"/>
+  </a>
 </div>
 ---
 
