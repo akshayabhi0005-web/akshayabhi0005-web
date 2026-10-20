@@ -29,6 +29,7 @@
       <p align="left">
         ⚡ &nbsp;<b>Full-Stack Development</b><br />
         🧠 &nbsp;<b>Algorithms &amp; Problem Solving</b><br />
+        
       </p>
     </td>
     <td width="66%" valign="top">
