@@ -8,7 +8,7 @@
   </a>
 
   <!-- LinkedIn Badge -->
-  <a href="YOUR_LINKEDIN_PROFILE_URL">
+  <a href="[YOUR_LINKEDIN_PROFILE_URL](https://www.linkedin.com/in/akshay-n0005/)">
     <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile"/>
   </a>
 </div>
