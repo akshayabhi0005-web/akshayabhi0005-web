@@ -3,12 +3,12 @@
   <br/><br/>
 
   <!-- GitHub Badge -->
-  <a href="https://github.com/akshayabhi0005-web">
+  <a href="https://github.com/akshayabhi0005-web" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-akshayabhi0005--web-0B6B50?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"/>
   </a>
 
   <!-- LinkedIn Badge -->
-  <a href="[YOUR_LINKEDIN_PROFILE_URL](https://www.linkedin.com/in/akshay-n0005/)">
+  <a href="https://www.linkedin.com/in/akshay-n0005/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile"/>
   </a>
 </div>
