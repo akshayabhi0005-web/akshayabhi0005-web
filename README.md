@@ -1,10 +1,26 @@
 <div align="center">
-  <img src="assets/github-banner.svg" alt="Akshay N — Developer, Builder, Lifelong Learner" width="100%"/>
+  <!-- Profile Banner -->
+  <img
+    src="https://raw.githubusercontent.com/akshayabhi0005-web/akshayabhi0005-web/main/assets/github-banner.svg"
+    alt="Akshay N — Software Developer"
+    width="100%"
+  />
+
   <br/><br/>
+
+  <!-- GitHub Profile Badge -->
   <a href="https://github.com/akshayabhi0005-web">
-    <img src="https://img.shields.io/badge/GitHub-akshayabhi0005--web-0B6B50?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile"/>
+    <img
+      src="https://img.shields.io/badge/GitHub-akshayabhi0005--web-0B6B50?style=for-the-badge&logo=github&logoColor=white"
+      alt="GitHub Profile"
+    />
   </a>
-<img src="https://komarev.com/ghpvc/?username=akshayabhi0005-web&style=for-the-badge&color=0B6B50&label=PROFILE+VIEWS" alt="Profile Views"/>
+
+  <!-- Profile Views Counter -->
+  <img
+    src="https://komarev.com/ghpvc/?username=akshayabhi0005-web&style=for-the-badge&color=0B6B50&label=PROFILE+VIEWS"
+    alt="Profile Views"
+  />
 </div>
 
 ---
